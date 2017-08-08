@@ -16,10 +16,10 @@ platforms:
   - name: centos-7.3
 
 suites:
-  - name: default
+  - name: iptables
     run_list:
-      - recipe[netsec::default]
+      - recipe[netsec::iptables]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/smoke/iptables
     attributes:
