@@ -4,6 +4,7 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+include_recipe 'iptables'
 include_recipe 'simple_iptables'
 
 # Because fuck systemd
